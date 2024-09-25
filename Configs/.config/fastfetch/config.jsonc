@@ -1,8 +1,14 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-        "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/pngs/\" -name \"*.png\" | shuf -n 1)",
-        "height": 18
+    "logo": 
+    {
+        "height": 18,
+        "type": "file-raw",
+        "padding": 
+        {
+          "left": 3,
+          "top": 3
+        }
     },
     "display": {
         "separator": " : "
@@ -10,7 +16,7 @@
     "modules": [
         {
             "type": "custom",
-            "format": "\u001b[36m    コンピューター"
+            "format": "\u001b[36m    NGUYEN TRUNG KIEN"
         },
         {
             "type": "custom",
@@ -97,7 +103,7 @@
             "type": "custom",
             "format": "└──────────────────────────────────────────┘"
         },
-	{
+	      {
             "type": "colors",
             "paddingLeft": 2,
             "symbol": "circle"
